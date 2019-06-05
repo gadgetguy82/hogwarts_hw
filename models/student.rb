@@ -1,4 +1,5 @@
 require_relative("../db/sql_runner")
+require_relative("house")
 
 class Student
 
@@ -40,7 +41,15 @@ class Student
   end
 
   def pretty_name
-    return "#{first_name} #{last_name}"
+    return "#{last_name}, #{first_name}"
+  end
+
+  def house
+    sql = "SELECT houses.* FROM houses INNER JOIN students
+    ON houses.id = students.house_id WHERE students.id = $1"
+    values = [@id]
+    house_data = SqlRunner.run(sql, values)[0]
+    return House.new(house_data)
   end
 
   def self.all

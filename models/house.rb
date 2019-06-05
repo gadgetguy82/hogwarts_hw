@@ -1,4 +1,5 @@
 require_relative("../db/sql_runner")
+require_relative("student")
 
 class House
 
@@ -35,6 +36,13 @@ class House
     sql = "DELETE FROM houses WHERE id = $1"
     values = [@id]
     SqlRunner.run(sql, values)
+  end
+
+  def students
+    sql = "SELECT students.* FROM students INNER JOIN houses
+    ON students.house_id = houses.id"
+    students_data = SqlRunner.run(sql)
+    return students_data.map{|student| Student.new(student)}
   end
 
   def self.all
