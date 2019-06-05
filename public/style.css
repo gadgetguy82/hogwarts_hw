@@ -1,0 +1,67 @@
+#gryffindor {
+  background-image: url("images/gryffindor_crest.png");
+  background-color: #cccccc;
+  height: 820px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+#hufflepuff {
+  background-image: url("images/hufflepuff_crest.png");
+  background-color: #cccccc;
+  height: 820px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+#ravenclaw {
+  background-image: url("images/ravenclaw_crest.png");
+  background-color: #cccccc;
+  height: 820px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+#slytherin {
+  background-image: url("images/slytherin_crest.png");
+  background-color: #cccccc;
+  height: 820px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+ul.navbar {
+  font-size: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.navlist {
+  float: left;
+  display: inline;
+  border-right: 1px solid #bbb;
+}
+
+li.navlist:last-child {
+  border-right: none;
+}
+
+a.navlink {
+  display: block;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}

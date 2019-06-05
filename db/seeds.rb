@@ -7,28 +7,28 @@ House.delete_all
 gryffindor = House.new(
   {
     "name" => "Gryffindor",
-    "url" => ""
+    "url" => "/hogwarts/gryffindor"
   }
 )
 
 hufflepuff = House.new(
   {
     "name" => "Hufflepuff",
-    "url" => ""
+    "url" => "hogwarts/hufflepuff"
   }
 )
 
 ravenclaw = House.new(
   {
     "name" => "Ravenclaw",
-    "url" => ""
+    "url" => "/hogwarts/ravenclaw"
   }
 )
 
 slytherin = House.new(
   {
     "name" => "Slytherin",
-    "url" => ""
+    "url" => "/hogwarts/slytherin"
   }
 )
 

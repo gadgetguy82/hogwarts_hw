@@ -5,6 +5,22 @@ require_relative("models/student")
 require_relative("models/house")
 also_reload("models")
 
+get "/hogwarts/gryffindor" do
+  erb(:gryffindor)
+end
+
+get "/hogwarts/hufflepuff" do
+  erb(:hufflepuff)
+end
+
+get "/hogwarts/ravenclaw" do
+  erb(:ravenclaw)
+end
+
+get "/hogwarts/slytherin" do
+  erb(:slytherin)
+end
+
 # INDEX
 get "/hogwarts" do
   @students = Student.all

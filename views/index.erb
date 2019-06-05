@@ -1,7 +1,7 @@
 <% @students.each do |student| %>
   <p>Student Name: <%= student.pretty_name %></p>
   <p>Age: <%= student.age %></p>
-  <p>House: <%= student.house.name %></p>
-  <p><a href="/hogwarts/<%=student.id%>">Show Student Details</a></p>
+  <p>House: <a href="<%= student.house.url %>"><%= student.house.name %></a></p>
+  <p><a href="/hogwarts/<%= student.id %>">Show Student Details</a></p>
   <hr>
 <% end %>
