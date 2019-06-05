@@ -11,9 +11,9 @@ gryffindor = House.new(
   }
 )
 
-slytherin = House.new(
+hufflepuff = House.new(
   {
-    "name" => "Slytherin",
+    "name" => "Hufflepuff",
     "url" => ""
   }
 )
@@ -25,17 +25,17 @@ ravenclaw = House.new(
   }
 )
 
-hufflepuff = House.new(
+slytherin = House.new(
   {
-    "name" => "Hufflepuff",
+    "name" => "Slytherin",
     "url" => ""
   }
 )
 
 gryffindor.save
-slytherin.save
-ravenclaw.save
 hufflepuff.save
+ravenclaw.save
+slytherin.save
 
 student1 = Student.new(
   {

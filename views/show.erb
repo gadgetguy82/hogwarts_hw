@@ -1,0 +1,7 @@
+<p>Student Name: <%= @student.pretty_name %></p>
+<p>Age: <%= @student.age %></p>
+<p>House: <%= @student.house.name %></p>
+<p><a href="/hogwarts/<%= @student.id %>/edit">Edit Details</a></p>
+<form action="/hogwarts/<%= @student.id %>/delete" method="post">
+  <input type="submit" value="Delete Student">
+</form>

@@ -60,7 +60,7 @@ class Student
 
   def self.find(id)
     sql = "SELECT * FROM students WHERE id = $1"
-    values = [@id]
+    values = [id]
     student_data = SqlRunner.run(sql, values)[0]
     return Student.new(student_data)
   end

@@ -47,13 +47,13 @@ class House
 
   def self.all
     sql = "SELECT * FROM houses"
-    houses_data = SqlRunner.run(sql, values)
+    houses_data = SqlRunner.run(sql)
     return houses_data.map{|house| House.new(house)}
   end
 
   def self.find(id)
     sql = "SELECT * FROM houses WHERE id = $1"
-    values = [@id]
+    values = [id]
     house_data = SqlRunner.run(sql, values)[0]
     return House.new(house_data)
   end

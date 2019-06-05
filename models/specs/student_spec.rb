@@ -32,7 +32,7 @@ class StudentTest < Minitest::Test
   end
 
   def test_get_pretty_name
-    assert_equal("Harry Potter", @student.pretty_name)
+    assert_equal("Potter, Harry", @student.pretty_name)
   end
 
 end
