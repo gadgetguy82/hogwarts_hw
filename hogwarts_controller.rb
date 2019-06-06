@@ -57,7 +57,7 @@ end
 post "/hogwarts/:id" do
   student = Student.new(params)
   student.update
-  redirect to("/hogwarts")
+  redirect to("/hogwarts/#{student.id}")
 end
 
 # DELETE
